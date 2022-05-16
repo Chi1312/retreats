@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="shortcut icon" type="img/png" href="img/logo.png" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Meditate | Quiet your mind</title>
+  </head>
+  <body>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">About Meditate</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Popular retreats</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Meditate</span>
+          <span class="heading-primary-sub">quiet your mind, relax your body</span>
+        </h1>
+
+        <a href="#" class="btn btn--white btn--animated">Discover our retreats</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            We have locations all over the world!
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Over 25 locations in 12 countries!
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              libero explicabo illo, ab aperiam architecto? Suscipit modi enim
+              at reiciendis rem exercitationem perferendis veritatis nisi?
+              Officia fugit consequuntur provident minima.
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              From capital city center to remote islands
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              illum aspernatur accusamus perspiciatis unde pariatur magnam iusto
+              cupiditate quis cum reiciendis.
+            </p>
+
+            <a href="#" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/1.webp"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1 u-border-radius-small"
+              /><img
+                src="img/2.webp"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2 u-border-radius-small"
+              /><img
+                src="img/3.webp"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3 u-border-radius-small"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Explore the world
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                temporibus sunt illum, impedit mollitia vel obcaecati eaque.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Find inner peace
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                temporibus sunt illum, impedit mollitia vel obcaecati eaque.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Guided meditations
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                temporibus sunt illum, impedit mollitia vel obcaecati eaque.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Enhance your spirit
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                temporibus sunt illum, impedit mollitia vel obcaecati eaque.
+              </p>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+           Most popular retreats
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture-1">
+                </div>
+                <h4 class="card__heading">
+                <span class="card__heading-span--1">
+                  Sea Explorer
+                </span>
+                <div class="card__details">
+                  <ul class="card__details-list">
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                  </ul>
+                </div> 
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$299</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white btn--cta">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-1-of-3">  
+          <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture-2">
+                </div>
+                <h4 class="card__heading">
+                <span class="card__heading-span--2">
+                  Forest Trekker
+                </span>
+                <div class="card__details">
+                  <ul class="card__details-list">
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                  </ul>
+                </div> 
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$499</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white btn--cta">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture-3">
+                </div>
+                <h4 class="card__heading">
+                <span class="card__heading-span--3">
+                  Mountain Dew
+                </span>
+                <div class="card__details">
+                  <ul class="card__details-list">
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                    <li>Retreat feature</li>
+                  </ul>
+                </div> 
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$399</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white btn--cta">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="u-center-text u-margin-bottom-big">
+          <a href="#" class="btn btn--green">Discover all retreats!</a>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4">
+            <source src="img/video.webm" type="video/webm">
+            Your browser is not supported!
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">We make people genuinely happy!</h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img src="img/nat-8.jpg" alt="Person on a tour in nature" class="story__img">
+              <figcaption class="story__caption">
+                Jane Doe
+              </figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">Customer story about his experience</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione facere eveniet exercitationem natus sint similique ea beatae! Fugit modi illum libero et officia temporibus autem, repudiandae minima quidem explicabo. Fugit modi illum libero et officia temporibus autem, repudiandae minima quidem explicabo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img src="img/nat-9.jpg" alt="Person on a tour in nature" class="story__img">
+              <figcaption class="story__caption">
+                Jack Doe
+              </figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">Customer story about his experience</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione facere eveniet exercitationem natus sint similique ea beatae! Fugit modi illum libero et officia temporibus autem, repudiandae minima quidem explicabo. Fugit modi illum libero et officia temporibus autem, repudiandae minima quidem explicabo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <a href="#" class="btn-text">Read all stories &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-small">
+                <h2 class="heading-secondary">
+                  Start booking now
+                </h2>
+              </div>
+              <div class="form__group">
+                <input id="name" type="text" class="form__input" placeholder="Full Name" required>
+                <label for="name" class="form__label">Full name</label>
+              </div>
+            
+              <div class="form__group">
+                <input id="email" type="email" class="form__input" placeholder="Email address" required>
+                <label for="email" class="form__label">Email address</label>
+              </div>
+
+              <div class="form__group">
+                <div class="form__radio-group">
+                  <input type="radio" id="small" class="form__radio-input" name="size">
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Small tour group
+                  </label>
+                </div>
+                
+                <div class="form__radio-group">
+                  <input type="radio" id="large" class="form__radio-input" name="size">
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Large tour group
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn--green u-margin-top-small">Next step &rarr;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="map__text">Come visit us at our office:</h2>
+        <div id='map' style='width: 600px; height: 300px;' class="map"></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiY2hpMTMxMiIsImEiOiJjbDI4NHp6dXowMjE5M2lsdDhudHJpZTNlIn0.cFuOJ29XdPSxVbTp83p1Gw';
+        const map = new mapboxgl.Map({
+        style: 'mapbox://styles/mapbox/light-v10',
+        center: [-74.0066, 40.7135],
+        zoom: 15.5,
+        pitch: 45,
+        bearing: -17.6,
+        container: 'map',
+        antialias: true
+        });
+         
+        map.on('load', () => {
+        // Insert the layer beneath any symbol layer.
+        const layers = map.getStyle().layers;
+        const labelLayerId = layers.find(
+        (layer) => layer.type === 'symbol' && layer.layout['text-field']
+        ).id;
+         
+        // The 'building' layer in the Mapbox Streets
+        // vector tileset contains building height data
+        // from OpenStreetMap.
+        map.addLayer(
+        {
+        'id': 'add-3d-buildings',
+        'source': 'composite',
+        'source-layer': 'building',
+        'filter': ['==', 'extrude', 'true'],
+        'type': 'fill-extrusion',
+        'minzoom': 15,
+        'paint': {
+        'fill-extrusion-color': '#aaa',
+         
+        // Use an 'interpolate' expression to
+        // add a smooth transition effect to
+        // the buildings as the user zooms in.
+        'fill-extrusion-height': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        15,
+        0,
+        15.05,
+        ['get', 'height']
+        ],
+        'fill-extrusion-base': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        15,
+        0,
+        15.05,
+        ['get', 'min_height']
+        ],
+        'fill-extrusion-opacity': 0.6
+        }
+        },
+        labelLayerId
+        );
+        });
+        </script>
+      </section>
+
+      
+
+    <footer class="footer">
+      
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item u-inline-block"><a href="#" class="footer__link">Company</a></li>
+              <li class="footer__item u-inline-block"><a href="#" class="footer__link">Contact us</a></li>
+              <li class="footer__item u-inline-block"><a href="#" class="footer__link">Careers</a></li>
+              <li class="footer__item u-inline-block"><a href="#" class="footer__link">Privacy</a></li>
+              <li class="footer__item u-inline-block"><a href="#" class="footer__link">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Serban Nacu</a> with love, check out <a href="#" class="footer__link">his mixtape</a>. Copyright &copy; by Serban Nacu.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="#" class="popup__img">
+          <img src="img/nat-9.jpg" alt="#" class="popup__img">
+        </div>
+        <div class="popup__right">
+        <div class="popup__content-text">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Start booking now
+            </h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important &mdash; Please read the terms and conditions first</h3>
+            <div class="col-1-of-2">
+              <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptas minus quas, sed non aliquid deserunt voluptatum consectetur blanditiis numquam delectus? Labore quos, soluta nobis quasi illo inventore modi enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae repellendus a amet maxime provident voluptas reprehenderit error eveniet quaerat animi distinctio, delectus assumenda recusandae et consectetur veniam veritatis quas commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur quam quia ad sequi sint quis fugit aperiam voluptas. Facere provident rem ipsum? Aspernatur beatae quos cupiditate a placeat odio.</p>
+            </div>
+            <a href="#" class="btn btn--green u-margin-top-small">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <section class="grid-test">
+      
+      <div class="row">
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+          Col 2 of 3
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+          Col 2 of 4
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+          Col 3 of 4
+        </div>
+      </div>
+
+    </section>
+    -->
+  </body>
+</html>
